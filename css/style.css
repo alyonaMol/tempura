@@ -156,3 +156,51 @@
     background-color: #55bcd3 !important;  /* Колір при наведенні */
     border-color: #3c88a9 !important;
 }
+
+/* для строки де email*/
+.navbar {
+    padding: 20px 10px;  /* Збільшено відступи для більшого простору */
+    font-size: 1rem; /* Зменшено загальний розмір шрифта */
+  }
+  
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Зменшено пробіл між елементами */
+  }
+  
+  .flex-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .text-container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column; /* Використовуємо вертикальне вирівнювання для тексту */
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .card-img-nav {
+    max-width: 60px; /* Зменшено розмір картинки */
+    height: auto;
+  }
+  
+  h4.navbar-title {
+    font-size: 24px; /* Зменшено розмір шрифта для заголовка */
+    margin-bottom: 10px; /* Додано більше простору між заголовком і текстом */
+    word-wrap: break-word;
+}
+  
+  h5.novbar-text {
+    font-size: 16px; /* Зменшено розмір шрифта для тексту */
+    margin-bottom: 10px; /* Додано відступ для переносу на новий рядок */
+  }
+  
+  form {
+    margin-top: 10px; /* Додано відступ між зображенням і формою */
+  }
