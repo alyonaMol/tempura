@@ -204,3 +204,29 @@
   form {
     margin-top: 10px; /* Додано відступ між зображенням і формою */
   }
+
+  .footer {
+    background-color: #000; /* Чорний фон футера */
+    color: #fff; /* Білий текст */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer h5 {
+    color: #fff; /* Робимо всі заголовки білими */
+}
+
+
+
+.footer a:hover {
+    color: #ccc; /* Сірий колір при наведенні */
+}
+
+.footer-logo {
+    background-color: black; /* Чорний фон картинки */
+    padding: 10px; /* Додаємо трохи відступів навколо */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}

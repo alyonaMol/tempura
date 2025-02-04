@@ -9,16 +9,17 @@
 </head>
 <body>
     <div class="header">
-        <div class="topbar">
-            <div class="logo-block"></div>
+        <div class="topbar d-flex justify-content-between align-items-center">
+            <div class="logo-block">
             <img src="img/креветка.png" alt="logo">
+            </div>
             <div class="action-buttons">
-                <ul>
-                    <li><a href="#">8 800 8000 0</a></li>
-                    <li><a href="#">Client service</a></li>
-                    <li><a href="#">Sing in</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">$0.00</a></li>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#">8 800 8000 0</a></li>
+                    <li class="list-inline-item"><a href="#">Client service</a></li>
+                    <li class="list-inline-item"><a href="#">Sign in</a></li>
+                    <li class="list-inline-item"><a href="#">Wishlist</a></li>
+                    <li class="list-inline-item"><a href="#">$0.00</a></li>
                 </ul>
             </div>
         </div>
@@ -231,10 +232,117 @@
               </div>
             </div>
           </nav>
+
+          <div class="container">
+            <h3 class="row-text text-center mb-4">We recomend</h3>
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/3-1-row.png" class="card-img-top card-img" alt="Ebi">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Ebi crunch maki</h5>
+                  <p class="card-price mt-auto"><span class="new-price">$18.40</span><span class="old-price">$23.00</span></p>
+                  <button class="btn btn-primary add-to-cart">🛒</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/3-2-row.png" class="card-img-top card-img" alt="Chakin">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Chakin maki</h5>
+                  <p class="card-price mt-auto">$12.00</p>
+                  <button class="btn btn-primary add-to-cart">🛒</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/3-3-row.png" class="card-img-top card-img" alt="Friend">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Friend set</h5>
+                  <p class="card-price mt-auto">$59.00</p>
+                  <button class="btn btn-primary add-to-cart">🛒</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/3-4-row.png" class="card-img-top card-img" alt="Fantasy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Fantasy set</h5>
+                  <p class="card-price mt-auto">$49.00</p>
+                  <button class="btn btn-primary add-to-cart">🛒</button>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
+
+
+
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Логотип і копірайт -->
+            <div class="col-md-3 text-center text-md-start">
+                <h4 class="fw-bold">
+                    <div class="footer-logo">
+                        <img src="img/креветка.png" alt="Tempura Logo" class="me-2" style="height: 40px;">
+                    </div>
+                </h4>
+                <p class="small">&copy; 2023 - Ecommerce software by PrestaShop™</p>
+            </div>
+
+            <!-- Про нас -->
+            <div class="col-md-3">
+                <h5 class="text-uppercase fw-bold">About Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Delivery</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Legal Notice</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Stores</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Категорії -->
+            <div class="col-md-3">
+                <h5 class="text-uppercase fw-bold">Categories</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">About us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Secure payment</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contact us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Sitemap</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Our blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Обліковий запис -->
+            <div class="col-md-3">
+                <h5 class="text-uppercase fw-bold">Your Account</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Personal info</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Orders</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Credit slips</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Addresses</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Vouchers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Соцмережі -->
+        <hr class="border-secondary">
+        <div class="text-center">
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light me-3"><i class="fas fa-rss"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-vimeo-v"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
     
-</div>
-    <div class="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
