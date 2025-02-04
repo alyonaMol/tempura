@@ -1,8 +1,10 @@
 .header,
 .content,
 .footer {
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 
 }
 .logo-block {
@@ -31,15 +33,65 @@
     color: aqua;
 }
 
-.topbar
- {
+.topbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
+
+/* Меню адаптивне */
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none; /* Ховаємо список */
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .navigation ul.active {
+        display: flex; /* Показуємо при відкритті */
+    }
+
+    .burger-menu {
+        display: block; /* Показуємо іконку меню */
+    }
+}
+
+/* Бургер-меню (приховане за замовчуванням) */
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.action-buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Відступ між елементами */
+}
+
+@media (max-width: 768px) {
+    .action-buttons ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 
 
 .search-container {
@@ -50,8 +102,20 @@
 }
 
 .search-form {
-    position: relative;
-    width: 300px; /* Ширина поля пошуку */
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        max-width: 100%;
+    }
+
+    .search-input {
+        flex-grow: 1;
+    }
 }
 
 .search-input {
