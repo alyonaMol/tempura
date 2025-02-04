@@ -77,3 +77,82 @@
 .search-button:hover img {
     opacity: 1; /* Робимо яскравішим при наведенні */
 }
+
+.content a {
+    background: #70e2e3;
+}
+.img-fixed {
+    width: 80%; 
+    height: 5rem; /* Фіксована висота */
+    object-fit: cover; /* Робить зображення рівномірними */
+}
+
+/*Карточки 8/4 ряд 2*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: none; /* Видаляємо рамки */
+}
+
+.card-img {
+    height: 200px; /* Всі картинки однакового розміру */
+    object-fit: cover; /* Обрізає зайве, щоб заповнити область */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    position: relative;
+    padding-bottom: 50px; /* Простір для кнопки */
+}
+
+.card-title {
+    font-weight: bold; /* Жирний текст */
+    white-space: nowrap; /* Запобігає переносу тексту */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.card-price {
+    font-weight: bold;
+    color: red; /* Червона ціна */
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 5px;
+    text-indent:3mm;
+}
+
+.new-price {
+    color: red;
+}
+
+/* Кнопка кошика */
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #54c1d2 !important;  /* Новий колір кнопки */
+    border-color: #4a97b6 !important;
+    color: white !important; /* Колір іконки */
+}
+
+.add-to-cart:hover {
+    background-color: #55bcd3 !important;  /* Колір при наведенні */
+    border-color: #3c88a9 !important;
+}
